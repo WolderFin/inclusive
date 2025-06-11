@@ -21,8 +21,8 @@ use MoonShine\Laravel\Pages\ProfilePage;
 
 return [
     'title' => env('MOONSHINE_TITLE', 'Инклюзив - панель управления лицензиями'),
-    'logo' => asset('max-logo.svg'),
-    'logo_small' => asset('mini-logo.svg'),
+    'logo' => '/max-logo.svg',
+    'logo_small' => '/mini-logo.svg',
 
 
     // Default flags
