@@ -71,4 +71,14 @@ final class MoonShineLayout extends AppLayout
     {
         return Footer::make([]); // Возвращаем пустой footer
     }
+    protected function getFaviconComponent(): Favicon
+    {
+        return Favicon::make()->customAssets([
+            'apple-touch' => asset('mini-logo.svg'),
+            '32' => asset('mini-logo.svg'),
+            '16' => asset('mini-logo.svg'),
+            'safari-pinned-tab' => asset('mini-logo.svg'),
+            'web-manifest' => asset('mini-logo.svg'),
+        ]);
+    }
 }
